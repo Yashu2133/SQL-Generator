@@ -226,7 +226,7 @@ This project demonstrates:
 
 ## Author
 
-Yashu
+RATHIK YASVANT N
 
 GitHub:
 https://github.com/Yashu2133
