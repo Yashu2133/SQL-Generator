@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(99, 102, 241, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 20%,
+      rgba(14, 165, 233, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      rgba(139, 92, 246, 0.08),
+      transparent 35%
+    ),
+    #f5f7fb;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 50px 20px;
+}
+
+/* Header */
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 38px;
+  color: #111827;
+}
+
+header p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Main */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Cards */
+
+.card {
+  background: #ffffff;
+  padding: 28px;
+  margin-bottom: 24px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* Labels */
+
+label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Select */
+
+select {
+  width: 100%;
+  padding: 13px 14px;
+  margin-bottom: 24px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #111827;
+}
+
+/* Textarea */
+
+textarea {
+  width: 100%;
+  min-height: 170px;
+  padding: 15px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 9px;
+
+  background: #ffffff;
+  color: #111827;
+
+  font-size: 15px;
+  font-family: inherit;
+
+  resize: vertical;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #111827;
+  box-shadow: 0 0 0 3px rgba(17, 24, 39, 0.08);
+}
+
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+/* Button */
+
+button {
+  display: block;
+  width: 210px;
+
+  margin: 22px auto 0;
+  padding: 14px 20px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #374151;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Output */
+
+.card h2 {
+  margin: 0 0 15px;
+  font-size: 20px;
+  color: #111827;
+}
+
+.sql-output {
+  min-height: 180px;
+  margin: 0;
+
+  padding: 20px;
+
+  background: #111827;
+  color: #e5e7eb;
+
+  border-radius: 10px;
+
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  line-height: 1.7;
+
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+/* Tablet */
+
+@media (max-width: 700px) {
+  .app {
+    padding: 35px 16px;
+  }
+
+  header {
+    margin-bottom: 30px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  header p {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 450px) {
+  .app {
+    padding: 25px 12px;
+  }
+
+  header h1 {
+    font-size: 26px;
+  }
+
+  header p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .card {
+    padding: 17px;
+  }
+
+  textarea {
+    min-height: 150px;
+  }
+
+  .sql-output {
+    padding: 15px;
+    font-size: 13px;
+  }
+}
